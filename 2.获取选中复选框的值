@@ -1,0 +1,7 @@
+
+
+text = $("input:checkbox[name='"+orderNo+"']:checked").map(function(index,elem) {
+   return $(elem).val();
+}).get().join(',');
+
+
