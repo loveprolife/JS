@@ -1,0 +1,18 @@
+<script>
+window.onload = function(){
+    var url = window.location.href;
+    var ps = url.split("#");
+    try{
+        if(ps[1] != 1){
+            url += "#1";
+        }else{
+            window.location = ps[0];
+        }
+    }catch(ex){
+        url += "#1";
+    }
+    window.location.replace(url);
+};
+</script>
+
+//
